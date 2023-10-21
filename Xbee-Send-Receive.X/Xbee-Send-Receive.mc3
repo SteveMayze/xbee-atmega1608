@@ -5836,7 +5836,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="TxBufferSize"/>
-         <value>32</value>
+         <value>128</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="USART0" name="USART0_ABEISRFunction"/>
@@ -7141,24 +7141,24 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\src\protected_io.S</file>
-         <hash>69d7d2c54bccf38027e4950b66dadc2d9c0be7a2523ffbe4648ec79e87f33522</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\include\pin_manager.h</file>
          <hash>b65065b69c42dc2ec2914389a63919b25eac6445d19a83c6a77bb70e1ac8e21f</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\src\protected_io.S</file>
+         <hash>69d7d2c54bccf38027e4950b66dadc2d9c0be7a2523ffbe4648ec79e87f33522</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\utils\compiler.h</file>
          <hash>3f2d7b47b12f2ecbd4c3971644ea7ecd10d2562fc8605a4495bd597eb0f59750</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\utils\atomic.h</file>
-         <hash>80e018fe02cd0c54394bb9a54dcf927d346410567dc6dded62bea9b49e322acf</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\src\pin_manager.c</file>
          <hash>fdd1a480c872c042bc48a52f49a2b66cf72c0d636b0166299a28b47b342898d4</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\utils\atomic.h</file>
+         <hash>80e018fe02cd0c54394bb9a54dcf927d346410567dc6dded62bea9b49e322acf</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\utils\interrupt_avr8.h</file>
@@ -7178,7 +7178,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>61dbac0052347b889687ed530d61a7a43923078ab029019b86a924eb2c51bbda</hash>
+         <hash>5f785fd0e1aef639696b77d567f507fa598f1ad685967e851338a9548b62bbaf</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\src\usart1.c</file>
@@ -7189,12 +7189,12 @@
          <hash>02efe91f6b4b8b31e5d6141c604f6f918f641f26433ffc12de9de3106df36a2e</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\mcc.h</file>
-         <hash>6b2cd69a8c14b3aec72df70a43344ff80515e7c17c72c80ba348274845774e04</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\include\port.h</file>
          <hash>2cbca36d0ae0501333b71a678a15eb5f30b7d2829c091e5b0331a8d8350bed79</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\mcc.h</file>
+         <hash>1a3f4de7fd6abf9d13fc2dba8d446a5d38c83b04cec2fe69f40e9ac677b4e7fe</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\src\usart0.c</file>
@@ -7230,7 +7230,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\include\usart0.h</file>
-         <hash>d8ac66f408acead2c5a4d37b758516671b35b523fc9eeebf934746365f377d39</hash>
+         <hash>09ee92b7888162d1f55e07259f973ee7827804ae1cc15e3b14564c368238d3b8</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\include\usart1.h</file>

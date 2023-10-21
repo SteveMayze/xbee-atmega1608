@@ -90,9 +90,11 @@ void modem_send_message(unsigned char* node_message, uint8_t data_length){
 /*
     Main application
 */
+#define DATA_LENGTH 73 // Upper limit for the payload
+// xbee buffer size is 14 + DATA_LENGTH
 int main(void)
 {
-    /* Initializes MCU, drivers and middleware */
+    /* Initialises MCU, drivers and middleware */
     SYSTEM_Initialize();
     
     printf("Start \n");
@@ -100,8 +102,13 @@ int main(void)
     XBEE_RESET_SetHigh();    
     modem_open(XBEE_ADDR_BROADCAST);
     _delay_ms(1000);
-    unsigned char msg[3] = "ABC";
-    modem_send_message(msg, 3);
+    
+    unsigned char msg[DATA_LENGTH] ={0};
+
+    for(uint8_t i=0; i<DATA_LENGTH; i++){
+        msg[i] = i+1;
+    }
+    modem_send_message(msg, DATA_LENGTH);
     printf("Entering ctrl loop \n");
     while (1){
         _delay_ms(30000);

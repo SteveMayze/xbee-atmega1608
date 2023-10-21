@@ -121,8 +121,8 @@ struct xbee_frame *xbee_create_at_cmd_frame(uint8_t req_id, struct xbee_at_cmd *
 }
 
 struct xbee_frame xbee_tx_frame;
-unsigned char xbee_tx_data[64];
-unsigned char xbee_tx_byte_stream[64];
+unsigned char xbee_tx_data[90];
+unsigned char xbee_tx_byte_stream[90];
 
 // xbee_create_tx_request creates an xbee_frame from the xbee_tx_request struct r. The caller is
 // responsible for freeing the returned xbee_frame.
