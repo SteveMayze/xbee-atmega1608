@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+  <loop>false</loop>
+  <repeat_times>1</repeat_times>
+  <repeat_period>500</repeat_period>
+  <frames_list>
+    <frame name="RED_Large_Payload">
+      <payload>7E005710010013A20041629BFBFFFE00000102030405060708090A0B0C0D0E0F101112131415161718191A1B1C1D1E1F202122232425262728292A2B2C2D2E2F303132333435363738393A3B3C3D3E3F4041424344454647484976</payload>
+    </frame>
+    <frame name="RED_moderate_payload">
+      <payload>7E001D10010013A20041629BFBFFFE00000102030405060708090A0B0C0D0E0F8B</payload>
+    </frame>
+  </frames_list>
+</data>
