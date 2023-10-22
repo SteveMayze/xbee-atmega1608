@@ -112,7 +112,7 @@ struct xbee_tx_status {
 };
 
 struct xbee_rx_packet {
-    uint64_t addr;
+    uint16_t addr;
     uint8_t network;
     rx_packet_option opts;
     int len;

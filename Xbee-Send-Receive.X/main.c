@@ -69,7 +69,7 @@ void modem_send_message(unsigned char* node_message, uint8_t data_length) {
     unsigned int size;
     unsigned char *bytes;
     bytes = xbee_frame_to_bytes(f, &size);
-    printf("Sending: length = %04x, ", size);
+    printf("Sending: length = %04x, Data: ", size);
     for (int idx = 0; idx < size; idx++) {
         printf("%02X ", bytes[idx]);
     }
@@ -132,6 +132,7 @@ typedef struct response_message {
 
 uint8_t rx_buffer[USART0_RX_BUFFER_SIZE];
 struct xbee_rx_packet p;
+uint8_t rx_pkt[90];
 
 static ModemResponse_t response;
 struct xbee_tx_status s;
@@ -162,6 +163,7 @@ ModemResponse_t* modem_receive_message(void) {
             break;
         case 0x90:
             printf("Modem Rx Request \n");
+            p.data = rx_pkt;
             xbee_frame_to_rx_packet(rx_buffer, &p);
             coord_addresss = p.addr;
             response.operation = p.data[1];

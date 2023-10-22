@@ -11,5 +11,8 @@
     <frame name="RED_moderate_payload">
       <payload>7E001D10010013A20041629BFBFFFE00000102030405060708090A0B0C0D0E0F8B</payload>
     </frame>
+    <frame name="RED_DATAREQ">
+      <payload>7E001010010013A20041629BFBFFFE00001122D0</payload>
+    </frame>
   </frames_list>
 </data>
